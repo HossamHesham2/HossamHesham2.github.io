@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hossam Hesham — Flutter Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-initials">HH</div>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"></div>
+    </div>
+    <p class="loader-text">Loading Portfolio</p>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-logo">Hossam.</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <div class="reveal from-bottom">
+            <div class="hero-avail">
+              <span class="hero-avail-dot"></span>
+              Available for Opportunities
+            </div>
+          </div>
+          <h1 class="hero-name reveal from-bottom">Hossam<br>Hesham</h1>
+          <p class="hero-title reveal from-bottom">Flutter Developer &amp; <span>Mobile Architect</span></p>
+          <div class="hero-btns reveal from-bottom">
+            <a href="#contact" class="btn btn-primary">Get In Touch →</a>
+            <a href="#projects" class="btn btn-outline">View Projects</a>
+          </div>
+        </div>
+        <div class="hero-right reveal from-right">
+          <div class="hero-card-wrap">
+            <div class="hero-card-glow"></div>
+            <div class="hero-card-ring"></div>
+            <div class="hero-card">
+              <div>
+                <div class="card-avatar"><img id="profile-image" src="images/profile.jpeg" alt="profile image"></div>
+                <div class="card-name">Hossam Hesham</div>
+                <div class="card-role">Flutter Developer · Giza, Egypt</div>
+              </div>
+              <div class="card-stats">
+                <div class="card-stat">
+                  <div class="card-stat-num">2+</div>
+                  <div class="card-stat-lbl">Years Dev</div>
+                </div>
+                <div class="card-stat">
+                  <div class="card-stat-num">5+</div>
+                  <div class="card-stat-lbl">Apps Built</div>
+                </div>
+                <div class="card-stat">
+                  <div class="card-stat-num">2</div>
+                  <div class="card-stat-lbl">Internships</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-section">
+    <div class="marquee-track" id="marqueeTrack">
+      <!-- items duplicated in JS -->
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <p class="section-label reveal from-bottom">Technical Proficiency</p>
+      <h2 class="section-title reveal from-bottom">Skills &amp; Technologies</h2>
+      <div class="divider reveal from-bottom"></div>
+      <div class="skills-grid" style="margin-top:3.5rem">
+        <div class="skill-bars" id="skillBars">
+          <!-- filled by JS -->
+        </div>
+        <div>
+          <p
+            style="font-size:.85rem;color:var(--text-muted);margin-bottom:1.5rem;text-transform:uppercase;letter-spacing:.1em;font-weight:600;">
+            Tech Stack</p>
+          <div class="tech-chips" id="techChips">
+            <!-- filled by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="container">
+      <p class="section-label reveal from-bottom">Career Journey</p>
+      <h2 class="section-title reveal from-bottom">Work Experience</h2>
+      <div class="divider reveal from-bottom"></div>
+      <div class="timeline" id="experienceTimeline">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <p class="section-label reveal from-bottom">Portfolio</p>
+      <h2 class="section-title reveal from-bottom">Featured Projects</h2>
+      <div class="divider reveal from-bottom"></div>
+      <div class="projects-grid" id="projectsGrid">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <div class="container">
+      <p class="section-label reveal from-bottom">Academic Background</p>
+      <h2 class="section-title reveal from-bottom">Education &amp; Languages</h2>
+      <div class="divider reveal from-bottom"></div>
+      <div class="edu-grid" id="eduGrid"></div>
+      <div class="lang-section reveal from-bottom">
+        <div class="lang-title">Languages</div>
+        <div class="lang-badges" id="langBadges"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <div class="container">
+      <p class="section-label reveal from-bottom">Credentials</p>
+      <h2 class="section-title reveal from-bottom">Certifications &amp; Awards</h2>
+      <div class="divider reveal from-bottom"></div>
+      <div class="certs-grid" id="certsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <p class="section-label reveal from-bottom">Let's Connect</p>
+      <h2 class="section-title reveal from-bottom">Get In Touch</h2>
+      <div class="divider reveal from-bottom"></div>
+      <div class="contact-grid">
+        <div class="contact-cards" id="contactCards"></div>
+        <div class="contact-avatar-wrap">
+          <div class="contact-ripple"></div>
+          <div class="contact-ripple"></div>
+          <div class="contact-ripple"></div>
+          <div class="contact-avatar"><img id="profile-image" src="images/profile.jpeg" alt="profile image"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Crafted with <span>♥</span> by Hossam Hesham — Flutter Developer · 2025</p>
+  </footer>
+
+ <script src="main.js"></script>
+</body>
+
+</html>
