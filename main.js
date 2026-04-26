@@ -94,14 +94,34 @@ document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; })
     requestAnimationFrame(animCursor);
 })();
 document.querySelectorAll('a, button, .btn, .proj-card, .exp-card').forEach(el => {
-    el.addEventListener('mouseenter', () => { ring.style.width = '56px'; ring.style.height = '56px'; ring.style.borderColor = 'rgba(212,169,106,.7)'; });
-    el.addEventListener('mouseleave', () => { ring.style.width = '36px'; ring.style.height = '36px'; ring.style.borderColor = 'rgba(201,168,76,.6)'; });
+    el.addEventListener('mouseenter', () => {
+        ring.style.width = '56px';
+        ring.style.height = '56px';
+        ring.style.borderColor = 'rgba(0,242,254,.8)';
+    });
+    el.addEventListener('mouseleave', () => {
+        ring.style.width = '36px';
+        ring.style.height = '36px';
+        ring.style.borderColor = 'rgba(0,242,254,.4)';
+    });
 });
-
+document.addEventListener('mousemove', () => {
+    dot.style.boxShadow = `
+        0 0 12px #00F2FE,
+        0 0 24px #00F2FE,
+        0 0 40px #4FACFE
+    `;
+});
 /* ==================== PARTICLES ==================== */
 const canvas = document.getElementById('particles');
 const ctx = canvas.getContext('2d');
-const COLORS = ['#C9A84C', '#E8D5A3', '#8B6914', '#D4A96A', '#3D2E0F'];
+const COLORS = [
+    '#00F2FE', // Cyan
+    '#4FACFE', // Light Blue
+    '#0061FF', // Deep Blue
+    '#7000FF', // Purple
+    '#38BDF8'  // Sky Blue extra
+];
 let W, H, particles = [];
 function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
 resize(); window.addEventListener('resize', resize);
@@ -123,14 +143,14 @@ function drawParticles() {
         if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
         if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
         ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = p.c + '99'; ctx.fill();
+        ctx.fillStyle = p.c + '66'; ctx.fill();
         for (let j = i + 1; j < particles.length; j++) {
             const q = particles[j];
             const dx = p.x - q.x, dy = p.y - q.y;
             const dist = Math.sqrt(dx * dx + dy * dy);
             if (dist < 130) {
                 ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y);
-                ctx.strokeStyle = p.c + Math.floor((1 - dist / 130) * 60).toString(16).padStart(2, '0');
+                ctx.strokeStyle = p.c + Math.floor((1 - dist / 130) * 80).toString(16).padStart(2, '0');
                 ctx.lineWidth = .6; ctx.stroke();
             }
         }
