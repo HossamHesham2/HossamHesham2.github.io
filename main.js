@@ -47,6 +47,7 @@ const PROJECTS = [
     { emoji: '📰', name: 'News App', desc: 'News aggregation app featuring categorized articles, detailed content display, and user-friendly navigation with API integration.', tags: ['Flutter', 'REST API', 'UI/UX'] },
     { emoji: '🎬', name: 'Movie App', desc: 'Movie discovery app with detailed content display, search functionality, and smooth navigation experience.', tags: ['Flutter', 'API', 'Clean Arch'] },
     { emoji: '🚌', name: 'BRT Mobile App', desc: 'Bus Rapid Transit application developed at TransIT with UI implementation, state management, and deep system integration.', tags: ['Flutter', 'BLoC', 'System Integration', 'Agile'] },
+    { emoji: '📋', name: 'Verta {Task Manager App}', desc: 'Task management application with modern UI implementation, state management, and deep system integration.', tags: ['Flutter', 'BLoC', 'System Integration', 'Agile','Firebase'] },
 ];
 
 const EDUCATION = [
