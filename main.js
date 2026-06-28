@@ -68,7 +68,8 @@ const CERTS = [
 
 const CONTACTS = [
     { icon: '✉️', cls: 'email', label: 'Email', value: 'hossamhesham413@gmail.com', href: 'mailto:hossamhesham413@gmail.com' },
-    { icon: '📱', cls: 'phone', label: 'Phone', value: '0100 158 362', href: 'tel:0100158362' },
+    { icon: '📱', cls: 'phone', label: 'Phone', value: '010 0158 6362', href: 'tel:01001586362' },
+    { icon: '📱', cls: 'phone', label: 'Phone', value: '011 5685 7807', href: 'tel:01156857807' },
     { icon: '📍', cls: 'loc', label: 'Location', value: 'Giza, Egypt', href: '#' },
     { icon: '💼', cls: 'avail', label: 'Status', value: 'Open to Opportunities', href: '#' },
 ];
