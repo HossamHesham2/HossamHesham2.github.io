@@ -32,12 +32,12 @@ const TECH = [
 const EXPERIENCE = [
   {
     title: "Flutter Intern",
-    company: "TransIT",
+    company: "Transport Information Technology",
     location: "Egypt",
     date: "2025",
     badge: "Professional",
     desc: [
-      "Worked on the Bus Rapid Transit (BRT) mobile application, focusing on UI implementation, state management, and system integration.",
+      "Worked on the Bus Rapid Transport Information Technology (BRT) mobile application, focusing on UI implementation, state management, and system integration.",
       "Contributed to a government-related mobile application (confidential project) applying Clean Architecture and collaborative workflows.",
       "Enhanced skills in scalable app structure, teamwork within an Agile environment, and real-world problem-solving.",
     ],
@@ -97,7 +97,7 @@ const PROJECTS = [
   {
     emoji: "🚌",
     name: "BRT Mobile App",
-    desc: "Bus Rapid Transit application developed at TransIT with UI implementation, state management, and deep system integration.",
+    desc: "Bus Rapid Transport Information Technology application developed at Transport Information Technology with UI implementation, state management, and deep system integration.",
     tags: ["Flutter", "BLoC", "System Integration", "Agile"],
   },
   {
@@ -132,7 +132,7 @@ const CERTS = [
   {
     icon: "🏆",
     name: "Flutter Internship Program",
-    issuer: "TransIT",
+    issuer: "Transport Information Technology",
     year: "2025",
   },
   {
@@ -144,7 +144,7 @@ const CERTS = [
   {
     icon: "🎖️",
     name: "BRT App Contribution Recognition",
-    issuer: "TransIT",
+    issuer: "Transport Information Technology",
     year: "2025",
   },
 ];
@@ -190,7 +190,7 @@ const CONTACTS = [
 const MARQUEE_ITEMS = [
   "Flutter Developer",
   "Route Academy",
-  "TransIT",
+  "Transport Information Technology",
   "Firebase Expert",
   "Clean Architecture",
   "BLoC / Provider",
@@ -375,7 +375,7 @@ EXPERIENCE.forEach((e, i) => {
 const pGrid = document.getElementById("projectsGrid");
 PROJECTS.forEach((p, i) => {
   pGrid.innerHTML += `
-  <div class="proj-card reveal from-bottom" style="transition-delay:${i * 0.08}s">
+  <div class="proj-card reveal from-bottom" style="Transport Information Technologyion-delay:${i * 0.08}s">
     <div class="proj-emoji">${p.emoji}</div>
     <div class="proj-name">${p.name}</div>
     <div class="proj-desc">${p.desc}</div>
@@ -424,7 +424,7 @@ CERTS.forEach((c, i) => {
 const cCards = document.getElementById("contactCards");
 CONTACTS.forEach((c, i) => {
   cCards.innerHTML += `
-  <a class="contact-card reveal from-left" href="${c.href}" style="transition-delay:${i * 0.1}s">
+  <a class="contact-card reveal from-left" href="${c.href}" style="Transport Information Technologyion-delay:${i * 0.1}s">
     <div class="contact-icon ${c.cls}">${c.icon}</div>
     <div>
       <div class="contact-label">${c.label}</div>
