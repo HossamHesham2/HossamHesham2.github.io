@@ -38,40 +38,30 @@ const TECH = [
   "Agile",
 ];
 
-const EXPERIENCE = [
+const CERTS = [
   {
-    title: "Flutter Intern",
-    company: "TransIT",
-    location: "Egypt",
-    date: "2025",
-    badge: "Professional",
-    desc: [
-      "Worked on the Bus Rapid Transit (BRT) mobile application, focusing on UI implementation, state management, and system integration.",
-      "Contributed to a government-related mobile application (confidential project) applying Clean Architecture and collaborative workflows.",
-      "Enhanced skills in scalable app structure, teamwork within an Agile environment, and real-world problem-solving.",
-    ],
-    chips: ["Flutter", "BLoC", "Clean Architecture", "Agile", "Government App"],
+    icon: "🏆",
+    name: "Best Project Award",
+    issuer: "EVA Pharma",
+    year: "2026",
   },
   {
-    title: "Flutter Developer Trainee",
-    company: "Route Academy",
-    location: "Egypt",
-    date: "2025",
-    badge: "Training",
-    desc: [
-      "Completed an intensive project-based Flutter training program covering advanced state management, Firebase integration, and REST API consumption.",
-      "Built multiple Flutter applications including Quran, event booking, news, movie, and e-commerce applications.",
-      "Applied BLoC, Provider, Firebase Authentication, Firestore, REST APIs, and MVVM architecture across different projects.",
-    ],
-    chips: [
-      "Flutter",
-      "Dart",
-      "BLoC",
-      "Provider",
-      "Firebase",
-      "REST API",
-      "MVVM",
-    ],
+    icon: "⭐",
+    name: "Flutter Pro Internship Program",
+    issuer: "EVA Pharma",
+    year: "2026",
+  },
+  {
+    icon: "🏆",
+    name: "Flutter Internship Program",
+    issuer: "TransIT Egypt",
+    year: "2025",
+  },
+  {
+    icon: "🏅",
+    name: "Flutter Development Training",
+    issuer: "Route Academy",
+    year: "2025",
   },
 ];
 
@@ -120,27 +110,74 @@ const PROJECTS = [
   },
   {
     emoji: "📰",
-    name: "News App",
-    desc: "News aggregation app featuring categorized articles, detailed content display, and user-friendly navigation with API integration.",
-    tags: ["Flutter", "REST API", "UI/UX"],
+    name: "News & Movie Apps",
+    desc: "News and movie browsing applications consuming REST APIs with categorized content, detailed views, search, filtering, and MVVM architecture.",
+    tags: ["Flutter", "REST API", "MVVM", "Repository Pattern"],
+  },
+];
+
+const EXPERIENCE = [
+  {
+    title: "Flutter Developer Intern",
+    company: "EVA Pharma",
+    location: "Egypt",
+    date: "2026",
+    badge: "Professional",
+    desc: [
+      "Built responsive UI components for internal production Flutter applications across mobile, tablet, and web breakpoints.",
+      "Migrated the ETI application from mobile/tablet layouts to a fully responsive web experience, restructuring screens and components for cross-device consistency.",
+      "Refactored the People application's theme and color system across the codebase, centralizing styling to improve UI consistency and maintainability.",
+      "Established reusable responsive UI patterns across multiple screens, reducing duplicated layout code.",
+      "Collaborated within a professional development team on production applications while following established architecture and coding standards.",
+    ],
+    chips: [
+      "Flutter",
+      "Responsive UI",
+      "Flutter Web",
+      "Clean Architecture",
+      "Production Apps",
+    ],
   },
   {
-    emoji: "🎬",
-    name: "Movie App",
-    desc: "Movie discovery app with detailed content display, search functionality, and smooth navigation experience.",
-    tags: ["Flutter", "API", "Clean Arch"],
+    title: "Flutter Developer Intern",
+    company: "TransIT Egypt",
+    location: "Egypt",
+    date: "2025",
+    badge: "Professional",
+    desc: [
+      "Developed core UI components for the Bus Rapid Transit (BRT) government mobile application, delivering pixel-perfect layouts aligned with design specifications.",
+      "Engineered BLoC-based state management to maintain predictable data flow across complex application states.",
+      "Applied Clean Architecture across a confidential government mobile project, improving codebase testability and maintainability.",
+      "Participated in Agile ceremonies including sprint planning and code reviews, contributing to iterative feature delivery.",
+    ],
+    chips: [
+      "Flutter",
+      "BLoC",
+      "Clean Architecture",
+      "Agile",
+      "Government App",
+    ],
   },
   {
-    emoji: "🚌",
-    name: "BRT Mobile App",
-    desc: "Bus Rapid Transit application developed at TransIT with UI implementation, state management, and deep system integration.",
-    tags: ["Flutter", "BLoC", "System Integration", "Agile"],
-  },
-  {
-    emoji: "📋",
-    name: "Verta {Task Manager App}",
-    desc: "Task management application with modern UI implementation, state management, and deep system integration.",
-    tags: ["Flutter", "BLoC", "System Integration", "Agile", "Firebase"],
+    title: "Flutter Developer Trainee",
+    company: "Route Academy",
+    location: "Egypt",
+    date: "2025",
+    badge: "Training",
+    desc: [
+      "Completed an intensive project-based Flutter training program covering advanced state management, Firebase integration, and REST API consumption.",
+      "Built multiple Flutter applications including Quran, event booking, news, movie, and e-commerce applications.",
+      "Applied BLoC, Provider, Firebase Authentication, Firestore, REST APIs, and MVVM architecture across different projects.",
+    ],
+    chips: [
+      "Flutter",
+      "Dart",
+      "BLoC",
+      "Provider",
+      "Firebase",
+      "REST API",
+      "MVVM",
+    ],
   },
 ];
 
@@ -158,38 +195,7 @@ const LANGS = [
   { flag: "🇬🇧", name: "English", level: "Professional" },
 ];
 
-const CERTS = [
-  {
-    icon: "🏆",
-    name: "Best Project Award",
-    issuer: "EVA Pharma",
-    year: "2026",
-  },
-  {
-    icon: "⭐",
-    name: "Flutter Pro Internship Program",
-    issuer: "EVA Pharma",
-    year: "2026",
-  },
-  {
-    icon: "🏆",
-    name: "Flutter Internship Program",
-    issuer: "TransIT",
-    year: "2025",
-  },
-  {
-    icon: "🏅",
-    name: "Flutter Development Training",
-    issuer: "Route Academy",
-    year: "2025",
-  },
-  {
-    icon: "🎖️",
-    name: "BRT App Contribution Recognition",
-    issuer: "TransIT",
-    year: "2025",
-  },
-];
+
 
 const CONTACTS = [
   {
