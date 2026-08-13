@@ -8,21 +8,21 @@
 }
 
 :root {
-    --gold: #00F2FE;
-    --gold-light: #4FACFE;
-    --gold-dark: #0061FF;
-    --accent: #7000FF;
+    --gold: #FFC600;
+    --gold-light: #FFD84D;
+    --gold-dark: #C99A00;
+    --accent: #8A6D00;
 
-    --bg: #020617;
-    --bg2: #0B1120;
-    --bg3: #1E293B;
+    --bg: #0A0A0A;
+    --bg2: #141414;
+    --bg3: #1F1F1F;
 
-    --text: #F1F5F9;
-    --text-muted: #94A3B8;
+    --text: #F5F5F5;
+    --text-muted: #A3A3A3;
 
-    --surface: rgba(0, 242, 254, 0.05);
-    --surface2: rgba(0, 242, 254, 0.1);
-    --border: rgba(0, 242, 254, 0.2);
+    --surface: rgba(255, 198, 0, 0.05);
+    --surface2: rgba(255, 198, 0, 0.1);
+    --border: rgba(255, 198, 0, 0.2);
 
     --font-head: 'Syne', sans-serif;
     --font-body: 'DM Sans', sans-serif;
@@ -305,8 +305,8 @@ section {
     display: inline-flex;
     align-items: center;
     gap: .5rem;
-    background: rgba(0, 242, 254, 0.12);
-    border: 1px solid rgba(0, 242, 254, 0.3);
+    background: rgba(255, 198, 0, 0.12);
+    border: 1px solid rgba(255, 198, 0, 0.3);
     border-radius: 99px;
     padding: .35rem .9rem;
     font-size: .8rem;
@@ -403,8 +403,8 @@ section {
 
 .btn-primary {
     background: linear-gradient(135deg, var(--gold-dark), var(--gold));
-    color: #020617;
-    box-shadow: 0 4px 24px rgba(0, 242, 254, .35);
+    color: #0A0A0A;
+    box-shadow: 0 4px 24px rgba(255, 198, 0, .35);
     position: relative;
     overflow: hidden;
 }
@@ -428,7 +428,7 @@ section {
 }
 
 .btn-primary:hover {
-    box-shadow: 0 8px 32px rgba(0, 242, 254, .6);
+    box-shadow: 0 8px 32px rgba(255, 198, 0, .6);
 }
 
 .btn-outline {
@@ -476,7 +476,7 @@ section {
 .hero-card-glow {
     position: absolute;
     inset: -40px;
-    background: radial-gradient(ellipse at center, rgba(0, 242, 254, .25) 0%, transparent 70%);
+    background: radial-gradient(ellipse at center, rgba(255, 198, 0, .25) 0%, transparent 70%);
     animation: glowPulse 3s ease infinite;
 }
 
@@ -495,8 +495,8 @@ section {
 .hero-card-ring {
     position: absolute;
     inset: -20px;
-    border: 2px dashed rgba(0, 242, 254, 0.5);
-    box-shadow: 0 0 12px rgba(0, 242, 254, 0.25);
+    border: 2px dashed rgba(255, 198, 0, 0.5);
+    box-shadow: 0 0 12px rgba(255, 198, 0, 0.25);
     border-radius: 50%;
     animation: spinRing 8s linear infinite;
 }
@@ -511,7 +511,7 @@ section {
     position: relative;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(0, 242, 254, .08), rgba(0, 97, 255, .05));
+    background: linear-gradient(135deg, rgba(255, 198, 0, .08), rgba(201, 154, 0, .05));
     border: 1px solid var(--border);
     border-radius: 20px;
     padding: 2.5rem;
@@ -534,7 +534,7 @@ section {
     font-size: 1.5rem;
     font-weight: 800;
     color: #0A0A0A;
-    box-shadow: 0 0 30px rgba(0, 242, 254, .4);
+    box-shadow: 0 0 30px rgba(255, 198, 0, .4);
 }
 
 #profile-image {
@@ -549,7 +549,7 @@ section {
     font-size: 1.5rem;
     font-weight: 800;
     color: #0A0A0A;
-    box-shadow: 0 0 30px rgba(0, 242, 254, .4);
+    box-shadow: 0 0 30px rgba(255, 198, 0, .4);
 }
 
 .card-name {
@@ -748,7 +748,7 @@ section {
     transform: translateY(-4px);
     border-color: var(--gold);
     color: var(--gold);
-    box-shadow: 0 4px 16px rgba(0, 242, 254, .3);
+    box-shadow: 0 4px 16px rgba(255, 198, 0, .3);
 }
 
 /* ===================== EXPERIENCE ===================== */
@@ -812,7 +812,7 @@ section {
 
 .exp-card:hover {
     transform: translateX(6px);
-    box-shadow: 0 8px 40px rgba(0, 242, 254, .15);
+    box-shadow: 0 8px 40px rgba(255, 198, 0, .15);
 }
 
 .exp-card:hover::before {
@@ -1170,7 +1170,7 @@ section {
 .contact-card:hover {
     transform: translateX(8px);
     border-color: var(--gold);
-    box-shadow: 0 4px 24px rgba(0, 242, 254, .2);
+    box-shadow: 0 4px 24px rgba(255, 198, 0, .2);
 }
 
 .contact-icon {
@@ -1231,24 +1231,24 @@ section {
 .contact-ripple:nth-child(1) {
     width: 110px;
     height: 110px;
-    border-color: rgba(0, 242, 254, .65);
-    box-shadow: 0 0 15px rgba(0, 242, 254, .25);
+    border-color: rgba(255, 198, 0, .65);
+    box-shadow: 0 0 15px rgba(255, 198, 0, .25);
     animation-delay: 0s;
 }
 
 .contact-ripple:nth-child(2) {
     width: 160px;
     height: 160px;
-    border-color: rgba(79, 172, 254, .5);
-    box-shadow: 0 0 20px rgba(79, 172, 254, .2);
+    border-color: rgba(255, 216, 77, .5);
+    box-shadow: 0 0 20px rgba(255, 216, 77, .2);
     animation-delay: .6s;
 }
 
 .contact-ripple:nth-child(3) {
     width: 210px;
     height: 210px;
-    border-color: rgba(112, 0, 255, .35);
-    box-shadow: 0 0 25px rgba(112, 0, 255, .15);
+    border-color: rgba(138, 109, 0, .35);
+    box-shadow: 0 0 25px rgba(138, 109, 0, .15);
     animation-delay: 1.2s;
 }
 

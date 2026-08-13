@@ -150,13 +150,7 @@ const EXPERIENCE = [
       "Applied Clean Architecture across a confidential government mobile project, improving codebase testability and maintainability.",
       "Participated in Agile ceremonies including sprint planning and code reviews, contributing to iterative feature delivery.",
     ],
-    chips: [
-      "Flutter",
-      "BLoC",
-      "Clean Architecture",
-      "Agile",
-      "Government App",
-    ],
+    chips: ["Flutter", "BLoC", "Clean Architecture", "Agile", "Government App"],
   },
   {
     title: "Flutter Developer Trainee",
@@ -194,8 +188,6 @@ const LANGS = [
   { flag: "🇸🇦", name: "Arabic", level: "Native" },
   { flag: "🇬🇧", name: "English", level: "Professional" },
 ];
-
-
 
 const CONTACTS = [
   {
@@ -273,30 +265,30 @@ document
     el.addEventListener("mouseenter", () => {
       ring.style.width = "56px";
       ring.style.height = "56px";
-      ring.style.borderColor = "rgba(0,242,254,.8)";
+      ring.style.borderColor = "rgba(255,198,0,.8)";
     });
     el.addEventListener("mouseleave", () => {
       ring.style.width = "36px";
       ring.style.height = "36px";
-      ring.style.borderColor = "rgba(0,242,254,.4)";
+      ring.style.borderColor = "rgba(255,198,0,.4)";
     });
   });
 document.addEventListener("mousemove", () => {
   dot.style.boxShadow = `
-        0 0 12px #00F2FE,
-        0 0 24px #00F2FE,
-        0 0 40px #4FACFE
+        0 0 12px #FFC600,
+        0 0 24px #FFC600,
+        0 0 40px #FFD84D
     `;
 });
 /* ==================== PARTICLES ==================== */
 const canvas = document.getElementById("particles");
 const ctx = canvas.getContext("2d");
 const COLORS = [
-  "#00F2FE", // Cyan
-  "#4FACFE", // Light Blue
-  "#0061FF", // Deep Blue
-  "#7000FF", // Purple
-  "#38BDF8", // Sky Blue extra
+  "#FFC600", // Gold
+  "#FFD84D", // Light Gold
+  "#C99A00", // Deep Gold
+  "#8A6D00", // Bronze
+  "#E8B923", // Amber extra
 ];
 let W,
   H,
@@ -416,7 +408,7 @@ EXPERIENCE.forEach((e, i) => {
 const pGrid = document.getElementById("projectsGrid");
 PROJECTS.forEach((p, i) => {
   pGrid.innerHTML += `
-  <div class="proj-card reveal from-bottom" style="Transport Information Technologyion-delay:${i * 0.08}s">
+  <div class="proj-card reveal from-bottom" style="transition-delay:${i * 0.08}s">
     <div class="proj-emoji">${p.emoji}</div>
     <div class="proj-name">${p.name}</div>
     <div class="proj-desc">${p.desc}</div>
@@ -465,7 +457,7 @@ CERTS.forEach((c, i) => {
 const cCards = document.getElementById("contactCards");
 CONTACTS.forEach((c, i) => {
   cCards.innerHTML += `
-  <a class="contact-card reveal from-left" href="${c.href}" style="Transport Information Technologyion-delay:${i * 0.1}s">
+  <a class="contact-card reveal from-left" href="${c.href}" style="transition-delay:${i * 0.1}s">
     <div class="contact-icon ${c.cls}">${c.icon}</div>
     <div>
       <div class="contact-label">${c.label}</div>
