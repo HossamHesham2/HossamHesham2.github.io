@@ -4,7 +4,7 @@ const SKILLS = [
   { name: "Firebase", pct: 85, color: "c2" },
   { name: "RESTful APIs", pct: 82, color: "c3" },
   { name: "BLoC / Provider", pct: 85, color: "c4" },
-  { name: "Clean Architecture (MVVM)", pct: 80, color: "c1" },
+  { name: "Clean Architecture", pct: 80, color: "c1" },
   { name: "Git & GitHub", pct: 78, color: "c2" },
   { name: "Responsive UI/UX", pct: 85, color: "c3" },
   { name: "Localization (AR/EN)", pct: 75, color: "c4" },
@@ -13,35 +13,44 @@ const SKILLS = [
 const TECH = [
   "Flutter",
   "Dart",
-  "Firebase",
   "BLoC",
+  "Cubit",
   "Provider",
-  "MVVM",
   "Clean Architecture",
-  "REST API",
+  "MVVM",
+  "Repository Pattern",
+  "Firebase",
+  "REST APIs",
+  "Dio",
+  "Hive",
+  "Isar",
+  "Shared Preferences",
+  "GetIt",
+  "Injectable",
+  "GoRouter",
   "Git",
   "GitHub",
-  "State Management",
+  "Responsive UI",
+  "Flutter Web",
   "Localization",
+  "RTL Support",
+  "Animations",
   "Agile",
-  "Android",
-  "iOS",
-  "Material Design",
 ];
 
 const EXPERIENCE = [
   {
     title: "Flutter Intern",
-    company: "Transport Information Technology",
+    company: "TransIT",
     location: "Egypt",
     date: "2025",
     badge: "Professional",
     desc: [
-      "Worked on the Bus Rapid Transport Information Technology (BRT) mobile application, focusing on UI implementation, state management, and system integration.",
+      "Worked on the Bus Rapid Transit (BRT) mobile application, focusing on UI implementation, state management, and system integration.",
       "Contributed to a government-related mobile application (confidential project) applying Clean Architecture and collaborative workflows.",
       "Enhanced skills in scalable app structure, teamwork within an Agile environment, and real-world problem-solving.",
     ],
-    chips: ["Flutter", "Clean Architecture", "BLoC", "Agile", "Government App"],
+    chips: ["Flutter", "BLoC", "Clean Architecture", "Agile", "Government App"],
   },
   {
     title: "Flutter Developer Trainee",
@@ -50,37 +59,64 @@ const EXPERIENCE = [
     date: "2025",
     badge: "Training",
     desc: [
-      "Completed an intensive Flutter course with hands-on projects covering state management, Firebase integration, and API consumption.",
-      "Built multiple production-quality apps including a Quran app, event booking app, news app, movie app, and a full e-commerce app.",
+      "Completed an intensive project-based Flutter training program covering advanced state management, Firebase integration, and REST API consumption.",
+      "Built multiple Flutter applications including Quran, event booking, news, movie, and e-commerce applications.",
+      "Applied BLoC, Provider, Firebase Authentication, Firestore, REST APIs, and MVVM architecture across different projects.",
     ],
-    chips: ["Flutter", "Firebase", "API", "BLoC", "Provider", "E-Commerce"],
+    chips: [
+      "Flutter",
+      "Dart",
+      "BLoC",
+      "Provider",
+      "Firebase",
+      "REST API",
+      "MVVM",
+    ],
   },
 ];
 
 const PROJECTS = [
   {
+    emoji: "🌐",
+    name: "ETI App",
+    desc: "Production Flutter application migrated from mobile/tablet layouts to a fully responsive web experience, with breakpoint-based layouts and reusable responsive components.",
+    tags: ["Flutter", "Responsive Web", "Web", "UI/UX"],
+  },
+  {
+    emoji: "🎨",
+    name: "People App",
+    desc: "Production Flutter application where the theme and color architecture was refactored and centralized, with reusable responsive UI patterns across multiple screens.",
+    tags: ["Flutter", "Theming", "Responsive UI", "UI/UX"],
+  },
+  {
     emoji: "💸",
     name: "Expense Tracker",
-    desc: "Smart expense tracking application with Firebase Authentication, Cloud Firestore, income & expense management, transaction categorization, balance dashboard, and scalable Clean Architecture using BLoC.",
+    desc: "Personal finance application for managing income, expenses, categories, and balances with Firebase Authentication, Cloud Firestore, BLoC, dashboards, and Clean Architecture.",
     tags: ["Flutter", "Firebase", "Firestore", "BLoC", "Clean Architecture"],
+  },
+  {
+    emoji: "📋",
+    name: "Verta",
+    desc: "Task management application built with Clean Architecture and BLoC, featuring complete CRUD operations, task filtering, status management, and offline-first persistence using Hive.",
+    tags: ["Flutter", "BLoC", "Hive", "Clean Architecture"],
+  },
+  {
+    emoji: "🚌",
+    name: "BRT Mobile Application",
+    desc: "Government Bus Rapid Transit mobile application developed at TransIT, contributing to UI implementation and state management within an Agile development environment.",
+    tags: ["Flutter", "BLoC", "Clean Architecture", "Agile"],
   },
   {
     emoji: "🕌",
     name: "Quran App",
-    desc: "Full-featured Islamic app with all Surahs, radio streaming, Hadith collection, prayer times, and digital tasbeeh counter.",
-    tags: ["Flutter", "Firebase", "API", "Audio"],
+    desc: "Full-featured Islamic application featuring all 114 Surahs, live radio streaming, Hadith collections, prayer times, digital Tasbeeh, REST APIs, and Arabic/English localization with RTL support.",
+    tags: ["Flutter", "Dart", "BLoC", "REST API", "Dio"],
   },
   {
     emoji: "🎟️",
     name: "Event Booking App",
-    desc: "Firebase-powered event booking platform with real-time authentication, event listings, and live data storage.",
-    tags: ["Flutter", "Firebase", "Auth", "Realtime DB"],
-  },
-  {
-    emoji: "🛒",
-    name: "Mega Mart (E-Commerce)",
-    desc: "Complete e-commerce app with Firebase auth, product listing, shopping cart, checkout flow, API integration, and BLoC state management.",
-    tags: ["Flutter", "Firebase", "BLoC", "REST API", "Cart"],
+    desc: "Event booking application using Firebase Authentication and Cloud Firestore for secure user management and real-time data synchronization.",
+    tags: ["Flutter", "Firebase", "Firestore", "Authentication"],
   },
   {
     emoji: "📰",
@@ -97,7 +133,7 @@ const PROJECTS = [
   {
     emoji: "🚌",
     name: "BRT Mobile App",
-    desc: "Bus Rapid Transport Information Technology application developed at Transport Information Technology with UI implementation, state management, and deep system integration.",
+    desc: "Bus Rapid Transit application developed at TransIT with UI implementation, state management, and deep system integration.",
     tags: ["Flutter", "BLoC", "System Integration", "Agile"],
   },
   {
@@ -112,8 +148,8 @@ const EDUCATION = [
   {
     icon: "🎓",
     degree: "Bachelor's Degree in Information Technology",
-    school: "University of Technology – October 6, Egypt",
-    meta: "Currently Enrolled · Focus: Software Development & Mobile Apps",
+    school: "6 October University of Technology, Giza, Egypt",
+    meta: "Currently Enrolled · Focus: Software Engineering",
   },
 ];
 
@@ -124,27 +160,33 @@ const LANGS = [
 
 const CERTS = [
   {
+    icon: "🏆",
+    name: "Best Project Award",
+    issuer: "EVA Pharma",
+    year: "2026",
+  },
+  {
+    icon: "⭐",
+    name: "Flutter Pro Internship Program",
+    issuer: "EVA Pharma",
+    year: "2026",
+  },
+  {
+    icon: "🏆",
+    name: "Flutter Internship Program",
+    issuer: "TransIT",
+    year: "2025",
+  },
+  {
     icon: "🏅",
     name: "Flutter Development Training",
     issuer: "Route Academy",
     year: "2025",
   },
   {
-    icon: "🏆",
-    name: "Flutter Internship Program",
-    issuer: "Transport Information Technology",
-    year: "2025",
-  },
-  {
-    icon: "⭐",
-    name: "Multiple Real-World Flutter Projects",
-    issuer: "Route Academy",
-    year: "2025",
-  },
-  {
     icon: "🎖️",
     name: "BRT App Contribution Recognition",
-    issuer: "Transport Information Technology",
+    issuer: "TransIT",
     year: "2025",
   },
 ];
@@ -165,13 +207,6 @@ const CONTACTS = [
     href: "tel:01001586362",
   },
   {
-    icon: "📱",
-    cls: "phone",
-    label: "Phone",
-    value: "011 5685 7807",
-    href: "tel:01156857807",
-  },
-  {
     icon: "📍",
     cls: "loc",
     label: "Location",
@@ -190,7 +225,7 @@ const CONTACTS = [
 const MARQUEE_ITEMS = [
   "Flutter Developer",
   "Route Academy",
-  "Transport Information Technology",
+  "TransIT",
   "Firebase Expert",
   "Clean Architecture",
   "BLoC / Provider",
